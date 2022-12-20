@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+    <div class="header-item item__1">
+        <h1>Node Learning</h1>
+        <img class="node" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+             alt="node" height="40">
+    </div>
+
+    <div class=" header-item item__6">
+        <h2>Новости</h2>
+    </div>
+    <div class=" header-item item__7">
+        <h2>Форум</h2>
+    </div>
+    <div class="header-item item__8">
+        <h2>Ваши посты</h2>
+    </div>
+    <div class="header-item item__last">
+        <h2>Личный кабинет</h2>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <header>
+            <h1>Что такое NodeJS?</h1>
+        </header>
+        <p>Node.js (Node) — это платформа с открытым исходным кодом для работы с языком JavaScript, построенная на
+            движке Chrome V8. Она позволяет писать серверный код для веб-приложений и динамических веб-страниц, а также
+            CLI приложений.</p>
+
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Где чаще всего используется node?</h1>
+        </header>
+        <p>Node.js используется при создании сервисов с постоянным обменом информацией с пользователем: социальных
+            сетей, онлайн-игр, чатов, систем совместной работы над проектом, онлайн-редакторов текста.
+        </p>
+        <p> В основе NodeJS лежит Event Loop, поэтому NodeJS однопоточна и асинхронна. Любая операция ввода-вывода не
+            блокирует работу.
+            Это значит, что ты можешь читать файлы, отправлять электронные письма, запрашивать базу данных и совершать
+            другие действия… одновременно.</p>
+    </div>
+
+    <div class="container">
+        <div class="information">
+            <header>
+                <h1>Популярность Node</h1>
+            </header>
+            <p>Многие крупные компании используют Node.js. Например, eBay и веб-версия PayPal в процессе перехода, а
+                LinkedIn, которая полностью отказалась от Ruby on Rails в пользу Node.js еще в 2012 году</p>
+        </div>
+        <div class="information">
+            <h3>Причины популярности:</h3>
+            <ol>
+                <li>Высокая скорость</li>
+                <li>Универсальность и гибкость</li>
+                <li>Большое количество модулей и библиотек</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="information">
+            <header>
+                <h1>Сравнение NodeJS с другими платформами</h1>
+                <p>К примеру, рассмотрим функцию замены подстроки в строке. Более подробное исследование и код серверной
+                    части выложен на
+                    <a class="site"
+                       href="https://talks.pub/post/sravnenie_skorosti_raboti_nodejs_php_python_lua_luajit_chast_2_string_replace">сайте</a>
+                </p>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="information">
+            <header>
+                <h3>Результаты тестирования:</h3>
+                <div class="grid-1">
+                    <div class="item item-green">
+                        <h4>str_length * test_count</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>1000 * 100000000</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>10000 * 10000000</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>100000 * 1000000</h4>
+                    </div>
+
+                    <div class="item item-light__green">
+                        <h4>Node.js</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>17.969s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>4.498s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>3.541s</h4>
+                    </div>
+
+                    <div class="item item-green">
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>20.4376s</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>92.5527s</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>87.6090s</h4>
+                    </div>
+
+                    <div class="item item-light__green">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>62.6877s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>23.4150s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>33.5308s</h4>
+                    </div>
+
+                    <div class="item item-green">
+                        <h4>LuaJIT</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>1275.6611s</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>1233.8939s</h4>
+                    </div>
+                    <div class="item item-green">
+                        <h4>1266.4118s</h4>
+                    </div>
+
+                    <div class="item item-light__green">
+                        <h4>Lua</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>1304.2875s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>1276.2183s</h4>
+                    </div>
+                    <div class="item item-light__green">
+                        <h4>1272.9350s</h4>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="information">
+                <header>
+                    <h1>Скачать NodeJS</h1>
+                    <div class="flex-container">
+                        <a class="download" href="">for Windows <img src="img/windows.png" alt="" height="15"></a>
+                        <a class="download" href="">for Mac <img src="img/mac.png" alt="" height="15"></a>
+                        <a class="download" href="">for Linux <img src="img/linux.png" alt="" height="15"></a>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="footer">
+    <div class="item">
+        <div>
+            <h1>Leequren Liquliphy</h1>
+            <h2>liquliphy@gmail.com</h2>
+            <h3>&copy; All rights reserved</h3>
+        </div>
+
+    </div>
+    <div class="item">
+        <div>
+            <h3>Нашли ошибку? <a class="report" href="#">Отправьте отзыв</a></h3>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
